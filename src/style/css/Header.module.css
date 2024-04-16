@@ -1,0 +1,80 @@
+.navbar {
+	position: relative; /* 부모 요소 설정 */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	padding: 8px 12px;
+	border-bottom: 1px solid gray;
+}
+
+.body {
+	margin : 0;
+}
+
+.a {
+	text-decoration: none;
+	color : black;
+	font-weight: bold;
+}
+
+.navbar__menu {
+	display: flex;
+	list-style: none;
+	padding-left: 0;
+}
+
+.navbar__menuLi {
+	margin-right: 20px;
+}
+
+.navbar__menuLi:hover {
+	background-color: yellow;
+	border-radius: 10px;
+}
+
+.navbar__menu__left {
+  position: absolute; /* 절대 위치 설정 */
+  transform: translateX(100%); /* 필요에 따라 위치 미세 조정 */
+	left: -230px;
+}
+
+.navbar__menu__right{
+	position: relative;
+}
+
+.navbar__search {
+	position:absolute;
+	right: 20%;
+	width: 25%;
+}
+
+.navbar__search__input {
+	width: 100%;
+	height: 20px;
+	padding: 10px 10px 10px 30px;
+	background-color: #F1F1F1;
+	border: none;
+}
+
+.navbar__search__icon {
+	position: absolute;
+	right: 390px;
+	top: 8px;
+	color: #767575;
+}
+
+
+
+/* 기본 로고 크기 */
+.logo {
+  width: 50px; /* 기본 크기 설정 */
+  height: auto; /* 비율 유지 */
+}
+
+/* 화면 크기가 768px 이하일 때 로고 크기 조정 */
+@media (max-width: 768px) {
+  .logo {
+    width: 30px; /* 작은 화면에서는 로고 크기 줄임 */
+  }
+}
